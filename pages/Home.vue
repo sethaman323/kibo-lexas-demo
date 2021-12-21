@@ -30,7 +30,7 @@ export default {
   // setup() {
   //   const { search, content, loading, error } = useContent();
     setup(_, context) {
-   const { content:contentPages, search } = useContent();
+   const { content, search } = useContent();
 
 
     onSSR(async () => {
@@ -85,7 +85,7 @@ export default {
       });
     });
     //as mike told to return promo banners
-     return { contentPages }
+     return { content }
   },
 };
 </script>
